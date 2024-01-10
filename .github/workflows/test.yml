@@ -1,7 +1,9 @@
 name: test
 on:
   push:
-    branches: [master]
+    branches: 
+      - master
+      - 'enable-tests-for-macos-desktop-76'
   pull_request:
     branches: [master]
   workflow_dispatch:
