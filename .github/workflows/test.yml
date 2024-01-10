@@ -4,7 +4,12 @@ on:
     branches: [master]
   pull_request:
     branches: [master]
-
+  workflow_dispatch:
+    inputs:
+      platform:
+        description: 'Platform to test'
+        required: true
+        default: 'macos-latest'
 env:
   PUB_ENVIRONMENT: bot.github
 
